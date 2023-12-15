@@ -17,3 +17,10 @@ exit 1
 else
 echo "installing git is ...SUCCESS"
 fi
+dnf install mysql -y
+if [ $? -ne 0 ]
+then 
+echo "mysql is installing ....FAILED"
+else
+echo "mysql installing is ...SUCCESS"
+fi
