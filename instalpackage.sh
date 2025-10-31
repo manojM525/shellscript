@@ -17,7 +17,7 @@ exit 1
 else
 echo "installing git is ...SUCCESS"
 fi
-apt install mysql -y     #installing mysql
+apt install mysql-server -y     #installing mysql
 if [ $? -ne 0 ]
 then 
 echo "mysql is installing ....FAILED"
